@@ -1,1 +1,382 @@
-index.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tiremide Fashion Hub</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0b0b0b;
+            color: #f5f5f5;
+        }
+
+        header {
+            background: #000000;
+            color: #d4af37;
+            text-align: center;
+            padding: 35px 15px;
+            border-bottom: 2px solid #d4af37;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 34px;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin-top: 10px;
+            color: #ffffff;
+            font-size: 17px;
+        }
+
+        nav {
+            background: #111111;
+            padding: 18px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: #d4af37;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 90px 20px;
+            background: linear-gradient(
+                rgba(0,0,0,0.75),
+                rgba(0,0,0,0.75)
+            ),
+            url("https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=80");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h2 {
+            color: #d4af37;
+            font-size: 36px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.7;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .button {
+            display: inline-block;
+            background: #d4af37;
+            color: #000000;
+            padding: 14px 28px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #ffffff;
+        }
+
+        .section {
+            padding: 55px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            color: #d4af37;
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .section-intro {
+            max-width: 700px;
+            margin: 0 auto 35px;
+            line-height: 1.7;
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .product {
+            background: #151515;
+            width: 270px;
+            padding: 30px 20px;
+            border: 1px solid #8f7624;
+            border-radius: 8px;
+        }
+
+        .product-icon {
+            font-size: 50px;
+        }
+
+        .product h3 {
+            color: #d4af37;
+        }
+
+        .product p {
+            line-height: 1.6;
+            color: #dddddd;
+        }
+
+        .gallery {
+            background: #111111;
+        }
+
+        .gallery-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 280px;
+            height: 350px;
+            object-fit: cover;
+            border: 2px solid #d4af37;
+            border-radius: 5px;
+        }
+
+        .about {
+            background: #000000;
+        }
+
+        .about p {
+            max-width: 750px;
+            margin: auto;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        .contact {
+            background: #111111;
+        }
+
+        .contact p {
+            font-size: 17px;
+            margin: 15px;
+        }
+
+        footer {
+            background: #000000;
+            color: #d4af37;
+            text-align: center;
+            padding: 25px;
+            border-top: 1px solid #d4af37;
+        }
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 27px;
+            }
+
+            .hero h2 {
+                font-size: 28px;
+            }
+
+            nav a {
+                margin: 0 5px;
+                font-size: 14px;
+            }
+
+            .gallery img {
+                width: 90%;
+                height: 380px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>TIREMIDE FASHION HUB</h1>
+    <p>Luxury • Style • Elegance • Confidence</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="home">
+
+    <h2>Where Luxury Meets Style ✨</h2>
+
+    <p>
+        Discover beautiful fashion, professional sewing
+        and hairstyling services created to make every woman
+        look and feel exceptional.
+    </p>
+
+    <a href="#services" class="button">
+        Explore Our Services
+    </a>
+
+</section>
+
+<section class="section" id="services">
+
+    <h2>Our Services</h2>
+
+    <p class="section-intro">
+        We create beautiful looks that bring out your
+        confidence, elegance and unique personality.
+    </p>
+
+    <div class="product-container">
+
+        <div class="product">
+            <div class="product-icon">✂️</div>
+            <h3>Custom Sewing</h3>
+            <p>
+                Beautiful outfits carefully made to fit
+                your style and measurements.
+            </p>
+        </div>
+
+        <div class="product">
+            <div class="product-icon">👗</div>
+            <h3>Women's Fashion</h3>
+            <p>
+                Stylish outfits for casual days,
+                parties and special occasions.
+            </p>
+        </div>
+
+        <div class="product">
+            <div class="product-icon">💇🏽‍♀️</div>
+            <h3>Hair Making</h3>
+            <p>
+                Beautiful hairstyles and professional
+                hair styling for women.
+            </p>
+        </div>
+
+        <div class="product">
+            <div class="product-icon">👰🏽‍♀️</div>
+            <h3>Bridal Styling</h3>
+            <p>
+                Elegant sewing and hairstyling for
+                your special day.
+            </p>
+        </div>
+
+        <div class="product">
+            <div class="product-icon">🧵</div>
+            <h3>Alterations</h3>
+            <p>
+                Clothing adjustments and alterations
+                for a perfect fit.
+            </p>
+        </div>
+
+        <div class="product">
+            <div class="product-icon">✨</div>
+            <h3>Special Occasions</h3>
+            <p>
+                Look your best for birthdays, parties,
+                ceremonies and important events.
+            </p>
+        </div>
+
+    </div>
+
+    <a href="https://wa.me/2348160810141?text=Hello%20Tiremide%20Fashion%20Hub%2C%20I%20would%20like%20to%20book%20an%20appointment."
+       class="button">
+        Book an Appointment
+    </a>
+
+</section>
+
+<section class="section gallery" id="gallery">
+
+    <h2>Our Fashion Gallery</h2>
+
+    <p class="section-intro">
+        A glimpse of elegance, beauty and fashion.
+    </p>
+
+    <div class="gallery-container">
+
+    <img src=IMG_20260823_073516_686.png alt="Tiremide Fashion Hub fashion">
+
+        <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=600&q=80"
+             alt="Fashion clothing">
+
+        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=600&q=80"
+             alt="Elegant fashion">
+
+        <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=600&q=80"
+             alt="Women's clothing">
+
+    </div>
+
+</section>
+
+<section class="section about" id="about">
+
+    <h2>About Tiremide Fashion Hub</h2>
+
+    <p>
+        At Tiremide Fashion Hub, we believe fashion should
+        make every woman feel confident, beautiful and unique.
+        We are dedicated to creating stylish outfits and
+        beautiful looks that reflect your personality.
+    </p>
+
+</section>
+
+<section class="section contact" id="contact">
+
+    <h2>Contact Us 📞</h2>
+
+    <p>📍 Akungba, Ondo State</p>
+
+    <p>📱 Call or WhatsApp us to make an enquiry.</p>
+
+    <a href="https://wa.me/2348160810141?text=Hello%20Tiremide%20Fashion%20Hub%2C%20I%20would%20like%20to%20make%20an%20enquiry."
+       class="button">
+        Contact Us on WhatsApp
+    </a>
+
+</section>
+
+<footer>
+
+    <p>© 2026 Tiremide Fashion Hub</p>
+
+    <p>Luxury fashion. Beautiful confidence.</p>
+
+</footer>
+
+</body>
+  </html>
